@@ -57,4 +57,4 @@ Jinja2-python
 markupsafe-python
 linecache2-python
 oslo.context-python
-
+os-client-config-python
