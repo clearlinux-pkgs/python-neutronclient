@@ -1,23 +1,92 @@
 CHANGES
 =======
 
-3.1.1
+4.0.0
 -----
 
-* Ensure to decode bytes or fail
+* Updated from global requirements
+* Add some items to the release notes
+* Devref: Transition to OpenStack Client
+* Updated from global requirements
+* port: Add 'direct-physical' as a valid vnic-type
+* Updated from global requirements
+* test: fix option in port test
+* Add protocol value options to sg-rule-create
+* improve tox -e cover
+* Use _i18n instead of i18n
+* Add method to retrieve loadbalancer stats
+* Support for Name field in Members and HMs
+* Show availability_zone info in CLI neutron agent-list
+* Updated from global requirements
+* Reworded nargs='?' explanation for better clarity
+* Drop py33 support
+* Fixed connection_limit and added UT
+* Allow tenant_id positional in quota syntax
+* Fix H405 violations
+* Updated from global requirements
+* Deprecated tox -downloadcache option removed
+* Remove nuage plugin from client
+* Adding missing headers to the devref documents
+* Allow lower case protocol values
+* Allow passing version as '2' as well as '2.0'
+* Remove XML support
+* Add availability_zone CLI
+* Updated from global requirements
+* Remove extra space from VPN validator exception messages
+* Updated from global requirements
+* Add CLI option guideline
+* Add description of extra args in CLI
+* Add os-client-config to CLI usage
+* Add more contents about CLI usage
+* Do not include reno releasenotes in normal documentation
+* Add release notes for changes since 3.0.0 release
+* Fix a column name "protocol/port" to "port/protocol"
+* Remove py26 support
+* Reorganize documentation structure
+* Updated from global requirements
+* Trivial: Fix a typo in class ListCommand
+* Use sphinx-build -W in [docs] target
+* Updated from global requirements
+* Add 'baremetal' as an allowed vnic type
+* Add reno for release notes management
+* Move the old release notes to a separate file
 * Do not allow name lookups on RBAC policies
+* Add route options to neutron router-update
+* Revert "Revert "Remove Cisco-specific neutron client commands""
+* Improve neutron-client error message output
+* CLI support for VPNaaS multiple local subnets
+* Add flavor argument to loadbalancer v2 create
+* Drop cliff-tablib from test-requirements.txt
+* Add Neutron flavor framework CLI
+* Create floating IP on a specific subnet ID
+* Documentation error in show_bandwidth_limit_rule
+* Use os-client-config and keystoneauth1 in shell
+* Updated from global requirements
+* Adding a generate_default_ethertype_function
+* Use clouds.yaml from devstack for functional tests
+* Updated from global requirements
 * Updated from global requirements
 * Updated from global requirements
 * Revert parent_id and obj_id parameter order
 * Updated from global requirements
+* Fix arg order of assertEqual and use assertTrue
 * Let devstack-gate handle the gate hook timeout
+* Ensure to decode bytes or fail
+* Updated from global requirements
+* Add allowed-address-pairs to port-update
+* neutron v2 command module cleanup (2)
+* neutron v2 command module cleanup #1
+* CRUD for VPN endpoint group API
+* Define non_admin_status_resources in each test
+* Fix extend_show parameter name
 * Py3k compliance: check for bytes when making a string
-* Update .gitreview for stable/liberty
+* Enable VPN test cases
 
 3.1.0
 -----
 
 * Updated from global requirements
+* Change ignore-errors to ignore_errors
 * Revert "Remove Cisco-specific neutron client commands"
 * Updated from global requirements
 * Remove Cisco-specific neutron client commands
