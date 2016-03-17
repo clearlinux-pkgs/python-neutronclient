@@ -1,26 +1,90 @@
 CHANGES
 =======
 
+4.1.1
+-----
+
+* Add release note of critial TypeError fix
+* Fix TypeError with error message
+
+4.1.0
+-----
+
+* Update relnote on fix of bug 1450414
+* Support dry-run option for auto-allocated-topology
+* fix: can't get authentication with os-token and os-url
+* refactor: Merge all debug logging at the beginning of take_action
+* refactor: Avoid overriding run() in cliff command
+* Add tags support
+* Add commands for Network IP Availability
+* Support cleanup of tenant resources with a single API call
+* Reflecting L7 content rules capability in LBaaS
+* LBaaS updates to reflect shared pools feature
+* Misleading output when network is not found
+* add rbac support for qos-policies
+* Devref Update: Transition to OpenStack Client
+* Add wrapper classes for return-request-id-to-caller
+* BGP Dynamic Routing: neutronclient changes
+* Add use_default_subnetpool to subnet create requests
+* Ensure to use exception per status code for all cases
+* Use instanceof instead of type
+* Add DNS integration support to the client
+* Improve str2dict key validation to avoid wrong keys
+* Updated from global requirements
+* Fix the exception when ID/Name not found
+* Fix typo in the help of net-list
+* Fix typos in the docstrings
+* Updated from global requirements
+* Provide argument filtering in neutron *-list
+* Client bindings for Get-me-a-network
+* "neutron help firewall-rule-update" info updated
+* Show all updatable options in (fw/fw-policy)-update CLI
+* Allow UPPER case in protocol/action for FW Rule
+* Make metavar usage consistent
+* Update translation setup
+* Fix code-block for python code in doc
+* Updated from global requirements
+* Trivial Update on ReleaseNotes
+* Remove inconsistency from vpn help text
+* Remove argparse from requirements
+* Add code for load balancer status tree
+* Add support for default subnetpools API
+* Updated from global requirements
+* Fix typo in docstrings
+* refactor: Get rid of usage of get_data in favor of take_action
+* refactor: Drop meaningless 'api' attribute from NeutronCommand class
+* refactor: Remove usage of useless command.command.OpenStackCommand
+* Convert remaining use of neutronclient.i18n to _i18n
+* Updated from global requirements
+* Remove 'u' displayed before subnetpool-list's prefixes
+* Add support for ip_version on AddressScope create
+* Enhance the help info of "neutron router-gateway-set"
+
 4.0.0
 -----
 
+* Adding a lowercase converter in utils.py
 * Updated from global requirements
 * Add some items to the release notes
 * Devref: Transition to OpenStack Client
 * Updated from global requirements
 * port: Add 'direct-physical' as a valid vnic-type
+* Drop unused TableFormater code
 * Updated from global requirements
 * test: fix option in port test
+* Support pagination listing in client extension
 * Add protocol value options to sg-rule-create
 * improve tox -e cover
 * Use _i18n instead of i18n
 * Add method to retrieve loadbalancer stats
 * Support for Name field in Members and HMs
 * Show availability_zone info in CLI neutron agent-list
+* Delete python bytecode before every test run
 * Updated from global requirements
 * Reworded nargs='?' explanation for better clarity
 * Drop py33 support
 * Fixed connection_limit and added UT
+* Add help information of 'firewall-rule-create'
 * Allow tenant_id positional in quota syntax
 * Fix H405 violations
 * Updated from global requirements
@@ -38,6 +102,7 @@ CHANGES
 * Add description of extra args in CLI
 * Add os-client-config to CLI usage
 * Add more contents about CLI usage
+* Setup for translation
 * Do not include reno releasenotes in normal documentation
 * Add release notes for changes since 3.0.0 release
 * Fix a column name "protocol/port" to "port/protocol"
