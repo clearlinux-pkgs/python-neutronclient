@@ -1,17 +1,26 @@
 CHANGES
 =======
 
-4.1.2
+4.2.0
 -----
 
+* Change try..except to assertRaises in UT
 * Updated from global requirements
-* Update .gitreview for stable/mitaka
+* Change --no-gateway help text
+* Log SHA1 hash of X-Auth-Token value
+* Remove APIParamsCall decorator
+* Fix assertNotEqual parameters
+* organize the release notes consistently
+* Update reno for stable/mitaka
+* Add parser options for description on resources
+* Updated from global requirements
 
 4.1.1
 -----
 
 * Add release note of critial TypeError fix
 * Fix TypeError with error message
+* Adding DSCP marking changes to neutronclient
 
 4.1.0
 -----
@@ -22,6 +31,7 @@ CHANGES
 * refactor: Merge all debug logging at the beginning of take_action
 * refactor: Avoid overriding run() in cliff command
 * Add tags support
+* Fixed typos in securitygroup.py
 * Add commands for Network IP Availability
 * Support cleanup of tenant resources with a single API call
 * Reflecting L7 content rules capability in LBaaS
@@ -32,6 +42,7 @@ CHANGES
 * Add wrapper classes for return-request-id-to-caller
 * BGP Dynamic Routing: neutronclient changes
 * Add use_default_subnetpool to subnet create requests
+* Do not print 'Created' message when using non-table formatter
 * Ensure to use exception per status code for all cases
 * Use instanceof instead of type
 * Add DNS integration support to the client
@@ -496,7 +507,7 @@ CHANGES
 2.3.3
 -----
 
-* Make compatible with Cliff (1.5.2
+* Make compatible with Cliff (1.5.2)
 * Remove an unused imported module
 * Remove a debugging print statement
 * Remove start index 0 in range()
@@ -612,12 +623,8 @@ CHANGES
 * Remove explicit distribute depend
 * Add metavar for --fixed-ip
 * Rename README to README.rst
-
-2.2.2a
-------
-
 * add readme for 2.2.2
-* Rename requires files to standard names
+*    Rename requires files to standard names
 * Set default columns in ext-list
 * Migrate to pbr
 * Allow the HTTPClient consumer to pass endpoint_type
@@ -648,14 +655,14 @@ CHANGES
 * Improve unit tests for python-quantumclient
 * Add exception & gettextutils to openstack.common
 * Reordering of optional and required args in lbaas commands help
-* add 2.2.0 release note in index.rst file
+* add  2.2.0 release note in index.rst file
 * Add a missing command line option: --insecure
 * Improve unit tests for python-quantumclient
 
 2.2.0
 -----
 
-* Fix a description of floatingip-id in (dis
+* Fix a description of floatingip-id in (dis)associate commands
 * Add support for security group quotas
 * Rename source_(group_id/ip_prefix) to remote_(group_id/ip_prefix)
 * Add pagination support for client
@@ -665,7 +672,7 @@ CHANGES
 2.1.2
 -----
 
-* Update cliff dependency (1.3.1
+* Update cliff dependency (1.3.1)
 * quantumclient.common.serializer module cleanup
 
 2.2.0a1
@@ -766,11 +773,7 @@ CHANGES
 * add keystone support, new command interface, API v2.0
 * Add initial docs
 * quit and print usage when unsupported version specified
-
-folsom-1
---------
-
-* Use --debug to enable printing HTTP message(s
+* Use --debug to enable printing HTTP message(s) between client and server, besides logging verbosely
 * Add HACKING.rst to generated tarballs
 * Align tox with standards
 * Clean up codebase in accordance with HACKING/PEP8
@@ -782,20 +785,12 @@ folsom-1
 * Remove generation of quantum/vcsversion.py
 * add LICENSE file to sdist tarball
 * Adds client side functions for quantum 'detail' actions
-
-essex-4
--------
-
 * bp/quantum-client-1.1
 * Bug 921930 remove depedency on webob from python-quantumclient
 * bug 933125 ensure cli.py executes from the shell
 * Enable log output to syslog
 * Add "quantum" package so that __init__.py is included
 * unexecutable lib files should not contain a shebang
-
-essex-3
--------
-
 * Additional small release needs
 * Initial cut at removing unneeded dependencies
 * Added 501 exceptions to client package
