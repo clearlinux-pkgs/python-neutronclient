@@ -1,13 +1,110 @@
 CHANGES
 =======
 
+6.0.0
+-----
+
+* Updated from global requirements
+* Sync tools/tox_install.sh
+* Devref: Newton mid-cycle updates for transition to OSC
+* Make trunk commands handle description for trunk resources
+* quota-update to return an error msg for 0 args
+* Fix the problem of "qos-bandwidth-limit-rule-show"
+* Add flavor argument to router
+* Add QoS egress minimum bandwidth rule to neutronclient
+* Make trunk commands handle timestamps for trunk resources
+* Provide client bindings for DELETE method of auto-allocated-topology extension
+* Updated from global requirements
+* Move advanced service functional tests to functional-adv-svcs
+* Drop LBaaS v1 functional tests
+* Remove case dependancy for user inputs
+* Updated from global requirements
+* Fix prompt message for qos-bandwidth-limit-rule-create
+* Add possible updatable options to net-update CLI
+* Remove admin-state-down from lbaas-member-update
+* Use upper constraints for all jobs in tox.ini
+* Improve Help message of VPN Update CLI
+* Updated from global requirements
+* Enable DeprecationWarning in test environments
+* Do not check stderr output from shell
+* Fix problem of RBAC command arguments
+* Trivial correction in variable name
+* Add 'shared' option to neutron address-scope-update
+* Update OSC transition status
+
+5.1.0
+-----
+
+* Update docs to use Identity v3
+* Add support for Bulk Delete in NeutronClient
+* Remove environment defaults
+* Add Python 3.5 classifier and venv
+* Make find_resourceid_by_id public in python binding class
+* Updated from global requirements
+* Add documentation for OSC plugin commands
+* Add long option to network trunk list command
+* Add trunk commands to openstackclient
+* Move find_resource family to API binding layer
+* Add quota support for LB and Listeners
+
+5.0.0
+-----
+
+* Fix string interpolation at logging call
+* Add client exception for HostNotCompatibleWithFixedIps
+* Remove discover from test-requirements
+* Updated from global requirements
+* Log request-id for each api call
+* Add functional test hook for fwaas command
+* Add support to expose default quotas for tenants
+* Improve help messages for NeutronClient
+* HAProxy uses milliseconds for its timeout values
+* Base OSC plugin support
+* Updated from global requirements
+* Make USER_AGENT variable global
+* Trivial: missing comma in the docs
+* Fixed --insecure not taking effect when specified
+* Fix the problem of mox in test_shell.py
+* Updated from global requirements
+* Fix the problem of "qos-dscp-marking-rule-show"
+* Trivial Fix: Fix typo
+* Add segment as an attribute to subnet in client
+* improve readme contents
+* Add no-shared option to qos-policy-update command
+* Updated from global requirements
+* Add in missing translations
+* Trivial: ignore openstack/common in flake8 exclude list
+* Update for API bindings
+* Remove unnecessary executable permissions
+* Updated from global requirements
+* Update tempest_lib to tempest.lib
+* Constraint tox targets with upper-constraints.txt
+* Make purge supports dvr router's interface
+* Switched from fixtures.MonkeyPatch to mock.patch
+* tests: removed mocking for Client.get_attr_metadata
+* Update the home-page with developer documentation
+* Address pairs help missing space
+* Devref: Add dynamic routing to OSC transition
+* Updated from global requirements
+* Updated from global requirements
+* Support sha256 for vpn-ikepolicy and vpn-ipsecpolicy
+* Fixes unclear error when no --pool-prefix given
+* Updated from global requirements
+* Added missing help text for 'purge' command
+* Fix random failure of security group unit test
+* Remove the last remaining vendor code
+
 4.2.0
 -----
 
 * Change try..except to assertRaises in UT
+* Update help information for lbaasv2 CLIs
 * Updated from global requirements
+* Devref: Newton updates for transition to OSC
 * Change --no-gateway help text
 * Log SHA1 hash of X-Auth-Token value
+* Devref Update: Transition to OpenStack Client
+* Fix duplicate entries in list_columns while extending the list
 * Remove APIParamsCall decorator
 * Fix assertNotEqual parameters
 * organize the release notes consistently
@@ -59,6 +156,7 @@ CHANGES
 * Allow UPPER case in protocol/action for FW Rule
 * Make metavar usage consistent
 * Update translation setup
+* Remove unnecessary entry from old relnotes
 * Fix code-block for python code in doc
 * Updated from global requirements
 * Trivial Update on ReleaseNotes
