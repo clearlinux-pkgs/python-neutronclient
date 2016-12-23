@@ -4,7 +4,7 @@
 #
 Name     : python-neutronclient
 Version  : 6.0.0
-Release  : 28
+Release  : 29
 URL      : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.0.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.0.0.tar.gz
 Summary  : CLI and Client Library for OpenStack Networking
