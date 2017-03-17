@@ -1,15 +1,55 @@
 CHANGES
 =======
 
+6.1.0
+-----
+
+* FWaaSv2 - Enable to specify 'any' for protocol
+* FWaaS - Adds an argument into find_resource
+* Modify key for 'qos-minimum-bandwidth-rule-list' reponse
+* Updated from global requirements
+* Replace 'os' to 'openstack' for all command example
+* Add documentation for FWaaS v2 OSC plugin commands
+* The testcase's name may be inapposite. It is better to use 'delete', instead of 'delele'
+* Add FWaaS V2 commands for OSC plugin
+* Updated from global requirements
+* Decode exception parameters to expand exception message properly
+* Add common utilities for OSC plugin implementation
+* Clarify how to do client-side development for repos in neutron governance
+* Disable VPNaaS functional tests in the neutronclient gate
+* Show team and repo badges on README
+* Fix a typo
+* Added --enable-snat option for router-gateway-set
+* [VPNaaS] Add support for sha2-384 and sha2-512
+* Devref: Transition to OSC update
+* Deprecate neutron CLI
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Add rbac_policy to quota resources
+* Use method is_valid_cidr from oslo.utils
+* OSC plugin: catch up with osc-lib 1.0 interface change
+* Updated from global requirements
+* Fix Quota Support for HMs
+* Enable release notes translation
+* Return proper error code for CLI failure
+* Replace 'MagicMock' with 'Mock'
+* Handle keystoneauth exceptions in retry logic
+* Replace lb_method with lb_algorithm
+* Update reno for stable/newton
+
 6.0.0
 -----
 
+* Correct DisassociatingHealthmonitor help messages
 * Updated from global requirements
 * Sync tools/tox_install.sh
+* Use correct cmd_parser
 * Devref: Newton mid-cycle updates for transition to OSC
 * Make trunk commands handle description for trunk resources
 * quota-update to return an error msg for 0 args
 * Fix the problem of "qos-bandwidth-limit-rule-show"
+* fix one spelling mistake
 * Add flavor argument to router
 * Add QoS egress minimum bandwidth rule to neutronclient
 * Make trunk commands handle timestamps for trunk resources
@@ -17,6 +57,7 @@ CHANGES
 * Updated from global requirements
 * Move advanced service functional tests to functional-adv-svcs
 * Drop LBaaS v1 functional tests
+* Clean imports in code
 * Remove case dependancy for user inputs
 * Updated from global requirements
 * Fix prompt message for qos-bandwidth-limit-rule-create
@@ -25,6 +66,7 @@ CHANGES
 * Use upper constraints for all jobs in tox.ini
 * Improve Help message of VPN Update CLI
 * Updated from global requirements
+* Simplify clearing session-persistence
 * Enable DeprecationWarning in test environments
 * Do not check stderr output from shell
 * Fix problem of RBAC command arguments
@@ -38,6 +80,7 @@ CHANGES
 * Update docs to use Identity v3
 * Add support for Bulk Delete in NeutronClient
 * Remove environment defaults
+* Disallow specifying name for meter-label-rule
 * Add Python 3.5 classifier and venv
 * Make find_resourceid_by_id public in python binding class
 * Updated from global requirements
@@ -58,10 +101,12 @@ CHANGES
 * Add functional test hook for fwaas command
 * Add support to expose default quotas for tenants
 * Improve help messages for NeutronClient
+* remove unused LOG
 * HAProxy uses milliseconds for its timeout values
 * Base OSC plugin support
 * Updated from global requirements
 * Make USER_AGENT variable global
+* Modify the help of connection-limit
 * Trivial: missing comma in the docs
 * Fixed --insecure not taking effect when specified
 * Fix the problem of mox in test_shell.py
@@ -110,6 +155,7 @@ CHANGES
 * organize the release notes consistently
 * Update reno for stable/mitaka
 * Add parser options for description on resources
+* Use raw values when non-table formatter is used
 * Updated from global requirements
 
 4.1.1
@@ -158,6 +204,7 @@ CHANGES
 * Update translation setup
 * Remove unnecessary entry from old relnotes
 * Fix code-block for python code in doc
+* Show tenant_id in *-list by admin
 * Updated from global requirements
 * Trivial Update on ReleaseNotes
 * Remove inconsistency from vpn help text
@@ -183,6 +230,7 @@ CHANGES
 * Add some items to the release notes
 * Devref: Transition to OpenStack Client
 * Updated from global requirements
+* Use six.python_2_unicode_compatible for NeutronException.__str__
 * port: Add 'direct-physical' as a valid vnic-type
 * Drop unused TableFormater code
 * Updated from global requirements

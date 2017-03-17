@@ -1,5 +1,5 @@
 PKG_NAME := python-neutronclient
-URL := http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.0.0.tar.gz
+URL := http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.1.0.tar.gz
 
 
 include ../common/Makefile.common
