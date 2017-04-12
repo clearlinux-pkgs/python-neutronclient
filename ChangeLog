@@ -1,11 +1,37 @@
 CHANGES
 =======
 
+6.2.0
+-----
+
+* FWaaS OSC plugin: Use python logging instead of oslo.log
+* Allow to specify tenant_id in subnetpool-create
+* Fix label of allowed-address-pair ip_address
+* Remove log translations
+* Convert gate_hook to devstack-tools
+* Don't sort the fw_rule order in OSC
+* Python 3.4 support is removed
+* Updated from global requirements
+* [Fix gate]Update test requirement
+* Change documentation about UpdateQuota class
+* doc: Patch acceptance policy after neutron CLI deprecation
+* doc: Fix warning
+* Add profiling support to neutronclient
+* Drop MANIFEST.in - it's not needed by pbr
+* Trivial Fix:fix typo in .pylintrc file
+* Updated from global requirements
+* Add BGP VPN OSC commands
+* Updated from global requirements
+* Update reno for stable/ocata
+
 6.1.0
 -----
 
 * FWaaSv2 - Enable to specify 'any' for protocol
 * FWaaS - Adds an argument into find_resource
+* Add plug-in summary for osc doc
+* x-openstack-request-id logged twice in logs
+* Set project_id column header to Project
 * Modify key for 'qos-minimum-bandwidth-rule-list' reponse
 * Updated from global requirements
 * Replace 'os' to 'openstack' for all command example
@@ -19,10 +45,12 @@ CHANGES
 * Disable VPNaaS functional tests in the neutronclient gate
 * Show team and repo badges on README
 * Fix a typo
+* Refactor of Network tests
 * Added --enable-snat option for router-gateway-set
 * [VPNaaS] Add support for sha2-384 and sha2-512
 * Devref: Transition to OSC update
 * Deprecate neutron CLI
+* Remove unused object
 * Updated from global requirements
 * Updated from global requirements
 * Updated from global requirements
@@ -59,6 +87,7 @@ CHANGES
 * Drop LBaaS v1 functional tests
 * Clean imports in code
 * Remove case dependancy for user inputs
+* Unable to add classless-static-route in extra_dhcp_opt extension
 * Updated from global requirements
 * Fix prompt message for qos-bandwidth-limit-rule-create
 * Add possible updatable options to net-update CLI
@@ -179,6 +208,7 @@ CHANGES
 * Support cleanup of tenant resources with a single API call
 * Reflecting L7 content rules capability in LBaaS
 * LBaaS updates to reflect shared pools feature
+* Fixed a bunch of spacing
 * Misleading output when network is not found
 * add rbac support for qos-policies
 * Devref Update: Transition to OpenStack Client
