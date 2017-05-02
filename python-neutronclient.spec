@@ -6,7 +6,7 @@
 #
 Name     : python-neutronclient
 Version  : 6.2.0
-Release  : 34
+Release  : 35
 URL      : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.2.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.2.0.tar.gz
 Source99 : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.2.0.tar.gz.asc
