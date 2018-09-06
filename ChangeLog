@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+6.9.1
+-----
+
+* Update UPPER\_CONSTRAINTS\_FILE for stable/rocky
+* Update .gitreview for stable/rocky
+* Fix broken unittests
+
 6.9.0
 -----
 
