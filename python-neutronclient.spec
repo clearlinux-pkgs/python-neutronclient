@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1A541148054E9E38 (infra-root@openstack.org)
 #
 Name     : python-neutronclient
-Version  : 6.9.1
-Release  : 38
-URL      : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.9.1.tar.gz
-Source0  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.9.1.tar.gz
-Source99 : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.9.1.tar.gz.asc
+Version  : 6.10.0
+Release  : 39
+URL      : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.10.0.tar.gz
+Source0  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.10.0.tar.gz
+Source99 : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.10.0.tar.gz.asc
 Summary  : CLI and Client Library for OpenStack Networking
 Group    : Development/Tools
 License  : Apache-2.0
@@ -80,14 +80,14 @@ python3 components for the python-neutronclient package.
 
 
 %prep
-%setup -q -n python-neutronclient-6.9.1
+%setup -q -n python-neutronclient-6.10.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536217374
+export SOURCE_DATE_EPOCH=1536587748
 python3 setup.py build -b py3
 
 %install
