@@ -1,6 +1,18 @@
 CHANGES
 =======
 
+6.11.0
+------
+
+* Fix docstring in method list\_routers\_on\_l3\_agent
+* Fix docstring in method list\_networks\_on\_dhcp\_agent
+* Fix api version handling, which completely breaks the client
+* Don't quote {posargs} in tox.ini
+* Adds the destination and source fwg to fwr
+* Use templates for cover and lower-constraints
+* Consolidate irrelevant files added for py3 project
+* Switch to stestr
+
 6.10.0
 ------
 
