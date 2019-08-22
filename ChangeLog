@@ -1,11 +1,28 @@
 CHANGES
 =======
 
+6.13.0
+------
+
+* Switch functional job to python3
+* Convert legacy functional jobs to zuulv3
+* Run functional test correctly
+* Add friendly event hints for logging
+* Add Python 3 Train unit tests
+* Blacklist bandit 1.6.0 due to directory exclusion bug
+* doc: Remove prompt from python binding examples
+* Replace git.openstack.org URLs with opendev.org URLs
+* OpenDev Migration Patch
+* Dropping the py35 testing
+* Replace openstack.org git:// URLs with https://
+* Update master for stable/stein
+
 6.12.0
 ------
 
 * Add subnet onboard CLI
 * Update json module to jsonutils
+* add python 3.7 unit test job
 * Remove basepython from [flake8] section
 * Update hacking version to 1.1
 * Update mailinglist from dev to discuss
