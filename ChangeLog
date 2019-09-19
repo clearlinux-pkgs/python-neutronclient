@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+6.14.0
+------
+
+* Add router add/remove extra routes operations
+* Improve help text
+* Fix string in header
+* Use secure sha256 instead of sha1
+
 6.13.0
 ------
 

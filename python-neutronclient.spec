@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xFC43F0EE211DFED8 (infra-root@openstack.org)
 #
 Name     : python-neutronclient
-Version  : 6.13.0
-Release  : 47
-URL      : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.13.0.tar.gz
-Source0  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.13.0.tar.gz
-Source1 : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.13.0.tar.gz.asc
+Version  : 6.14.0
+Release  : 48
+URL      : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.14.0.tar.gz
+Source0  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.14.0.tar.gz
+Source1 : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-6.14.0.tar.gz.asc
 Summary  : Python client library for Neutron
 Group    : Development/Tools
 License  : Apache-2.0
@@ -96,14 +96,14 @@ python3 components for the python-neutronclient package.
 
 
 %prep
-%setup -q -n python-neutronclient-6.13.0
+%setup -q -n python-neutronclient-6.14.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1566485656
+export SOURCE_DATE_EPOCH=1568907777
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
