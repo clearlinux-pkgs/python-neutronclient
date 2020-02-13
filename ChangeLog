@@ -1,10 +1,25 @@
 CHANGES
 =======
 
+7.0.0
+-----
+
+* Convert exception to string before passing it in
+* Avoid py36 error when printing unicode chars in a stream
+* fix a typo
+* Fix pep8 errors with hacking 2.0.0
+* Drop python 2.7 support
+* Drop python3 hack for XML serializer
+* Move grenade neutron-lib job to py3 and in python-neutronclient repo
+* Switch to Ussuri jobs
+* Remove 'public' and 'private' parameters in fwaas\_v2
+* Update master for stable/train
+
 6.14.0
 ------
 
 * Add router add/remove extra routes operations
+* PDF documentation build
 * Improve help text
 * Fix string in header
 * Use secure sha256 instead of sha1
