@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+7.1.0
+-----
+
+* Replace 'bgp speaker show dragents' with 'bgp dragent list'
+* Drop lib-forward-testing
+* Add support for port bindings
+
 7.0.0
 -----
 
