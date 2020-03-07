@@ -6,11 +6,11 @@
 #
 Name     : python-neutronclient
 Version  : 7.1.0
-Release  : 53
+Release  : 54
 URL      : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-7.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-7.1.0.tar.gz
 Source1  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-7.1.0.tar.gz.asc
-Summary  : Python client library for Neutron
+Summary  : CLI and Client Library for OpenStack Networking
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: python-neutronclient-bin = %{version}-%{release}
@@ -54,43 +54,8 @@ BuildRequires : simplejson
 BuildRequires : six
 
 %description
-========================
 Team and repository tags
-========================
-
-.. image:: https://governance.openstack.org/tc/badges/python-neutronclient.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
-Python bindings to the Neutron API
-==================================
-
-.. image:: https://img.shields.io/pypi/v/python-neutronclient.svg
-    :target: https://pypi.org/project/python-neutronclient/
-    :alt: Latest Version
-
-This is a client library for Neutron built on the Neutron API. It
-provides a Python API (the ``neutronclient`` module) and a command-line tool
-(``neutron``).
-
-* License: Apache License, Version 2.0
-* `PyPi`_ - package installation
-* `Online Documentation`_
-* `Launchpad project`_ - release management
-* `Blueprints`_ - feature specifications
-* `Bugs`_ - issue tracking
-* `Source`_
-* `Developer's Guide`_
-
-.. _PyPi: https://pypi.org/project/python-neutronclient
-.. _Online Documentation: https://docs.openstack.org/python-neutronclient/latest/
-.. _Launchpad project: https://launchpad.net/python-neutronclient
-.. _Blueprints: https://blueprints.launchpad.net/python-neutronclient
-.. _Bugs: https://bugs.launchpad.net/python-neutronclient
-.. _Source: https://opendev.org/openstack/python-neutronclient
-.. _Developer's Guide: http://docs.openstack.org/infra/manual/developers.html
-.. _Release Notes: https://docs.openstack.org/releasenotes/python-neutronclient
+        ========================
 
 %package bin
 Summary: bin components for the python-neutronclient package.
@@ -122,7 +87,24 @@ python components for the python-neutronclient package.
 Summary: python3 components for the python-neutronclient package.
 Group: Default
 Requires: python3-core
-Provides: pypi(python-neutronclient)
+Provides: pypi(python_neutronclient)
+Requires: pypi(babel)
+Requires: pypi(cliff)
+Requires: pypi(debtcollector)
+Requires: pypi(iso8601)
+Requires: pypi(keystoneauth1)
+Requires: pypi(netaddr)
+Requires: pypi(os_client_config)
+Requires: pypi(osc_lib)
+Requires: pypi(oslo.i18n)
+Requires: pypi(oslo.log)
+Requires: pypi(oslo.serialization)
+Requires: pypi(oslo.utils)
+Requires: pypi(pbr)
+Requires: pypi(python_keystoneclient)
+Requires: pypi(requests)
+Requires: pypi(simplejson)
+Requires: pypi(six)
 
 %description python3
 python3 components for the python-neutronclient package.
@@ -137,8 +119,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583213574
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583541753
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
