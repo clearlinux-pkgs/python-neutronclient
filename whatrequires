@@ -1,7 +1,4 @@
 # This file contains recursive sources that require this package
 heat
-horizon
 ironic
 neutron
-nova
-sahara
