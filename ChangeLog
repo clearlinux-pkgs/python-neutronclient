@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+7.2.0
+-----
+
+* Use unittest.mock instead of mock
+* Stop to use the \_\_future\_\_ module
+* Use unittest.mock instead of third party mock
+* Add segments client code
+* Remove usage of six
+* Switch to newer openstackdocstheme and reno versions
+* Fix hacking min version to 3.0.1
+* Bump default tox env from py37 to py38
+* Add py38 package metadata
+* Remove Babel from requirements
+* Add Python3 victoria unit tests
+* Update master for stable/ussuri
+
 7.1.1
 -----
 
