@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xC12B8E73B30F2FC8 (infra-root@openstack.org)
 #
 Name     : python-neutronclient
-Version  : 7.2.0
-Release  : 56
-URL      : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-7.2.0.tar.gz
-Source0  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-7.2.0.tar.gz
-Source1  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-7.2.0.tar.gz.asc
+Version  : 7.2.1
+Release  : 57
+URL      : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-7.2.1.tar.gz
+Source0  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-7.2.1.tar.gz
+Source1  : http://tarballs.openstack.org/python-neutronclient/python-neutronclient-7.2.1.tar.gz.asc
 Summary  : CLI and Client Library for OpenStack Networking
 Group    : Development/Tools
 License  : Apache-2.0
@@ -105,15 +105,15 @@ python3 components for the python-neutronclient package.
 
 
 %prep
-%setup -q -n python-neutronclient-7.2.0
-cd %{_builddir}/python-neutronclient-7.2.0
+%setup -q -n python-neutronclient-7.2.1
+cd %{_builddir}/python-neutronclient-7.2.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1592853564
+export SOURCE_DATE_EPOCH=1599764183
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -126,7 +126,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/python-neutronclient
-cp %{_builddir}/python-neutronclient-7.2.0/LICENSE %{buildroot}/usr/share/package-licenses/python-neutronclient/294b43b2cec9919063be1a3b49e8722648424779
+cp %{_builddir}/python-neutronclient-7.2.1/LICENSE %{buildroot}/usr/share/package-licenses/python-neutronclient/294b43b2cec9919063be1a3b49e8722648424779
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

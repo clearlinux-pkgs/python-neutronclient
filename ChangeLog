@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+7.2.1
+-----
+
+* Allow 4byte ASNs in dynamic routing client
+* Remove translation sections from setup.cfg
+* zuul: native Zuul v3 version of the grenade job
+* Fix description of bgp speaker set arg
+* lower-constraints: Drop os-testr, mox3
+
 7.2.0
 -----
 
@@ -10,6 +19,7 @@ CHANGES
 * Add segments client code
 * Remove usage of six
 * Switch to newer openstackdocstheme and reno versions
+* Add aggressive negotiation mode for ikepolicy
 * Fix hacking min version to 3.0.1
 * Bump default tox env from py37 to py38
 * Add py38 package metadata
